@@ -9,8 +9,7 @@ function Contact() {
       type="text"
       id="name"
       name="name"
-      autocomplete="on"
-      className="block w-full px-4 py-2 border  border-white rounded-lg text-indigo-700 focus:outline-none focus:bg-indigo-100 varwhite"
+      autoComplete="on"
       required
     />
 
@@ -19,8 +18,7 @@ function Contact() {
       type="email"
       id="email"
       name="email"
-      autocomplete="on"
-      className="block w-full px-4 py-2 border border-white rounded-lg  text-indigo-700 focus:outline-none focus:bg-indigo-100"
+      autoComplete="on"
       required
     />
 
@@ -30,21 +28,18 @@ function Contact() {
       id="message"
       name="message"
       rows="4"
-      className="block w-full px-4 py-2 border border-white rounded-lg  text-indigo-700 focus:outline-none focus:bg-indigo-100"
       required
     ></textarea>
 
     {/* Anti-spam field */}
     <input type="hidden" name="_gotcha" style={{ display: "none !important" }} />
 
-    <div className="flex justify-end">
     <button
       type="submit"
-      className="my-2 w-1/2 px-4 py-2 border border-white text-white rounded-lg shadow-lg hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400"
     >
       Send
     </button>
-    </div>
+
   </form>
       </div>
   );
