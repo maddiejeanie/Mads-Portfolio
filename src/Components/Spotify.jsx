@@ -1,8 +1,8 @@
 
-function Spotify() {
+function Spotify({ isDarkMode }) {
   return (
     
-              <div className='Card Spotify' id='Spotify'>
+              <div className={`Card Spotify ${isDarkMode ? "Dark": null}`} id='Spotify'>
       <h2>Spotify</h2>
       </div>
   );

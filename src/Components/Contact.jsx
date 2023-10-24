@@ -1,11 +1,12 @@
 
-function Contact() {
+function Contact({ isDarkMode }) {
   return (
-              <div className='Card Contact' id='Contact'>
+              <div className={`Card Contact ${isDarkMode ? "Dark": null}`} id='Contact'>
       <h2>Contact</h2>
       <form action="https://getform.io/f/3d45e44f-c964-4deb-8055-0933fa59eb9a" method="POST">
-    <label htmlFor="name" className="">Name:</label>
+    
     <input
+      placeholder="name"
       type="text"
       id="name"
       name="name"
@@ -13,8 +14,8 @@ function Contact() {
       required
     />
 
-    <label htmlFor="email" className="">Email:</label>
     <input
+      placeholder="email"
       type="email"
       id="email"
       name="email"
@@ -22,9 +23,8 @@ function Contact() {
       required
     />
 
-
-    <label htmlFor="message" className="">Message:</label>
-    <textarea
+<textarea
+        placeholder="leave a message"
       id="message"
       name="message"
       rows="4"

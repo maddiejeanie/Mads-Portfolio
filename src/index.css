@@ -3,35 +3,74 @@
   --lpurp: #AAA1FF;
   --dpurp: #4D3C8F;
   --white: #EEE9F7;
-  --black: #080015;
+  --black: #251D45;
   --red: #BD2A3E;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 .Card {
-  background-color: var(--lpurp); 
+  background-color: var(--lpurp);
   padding: 2rem;
-  margin: 0 auto;
-  width: 100%;
-  border-radius: 2rem;
+  border-radius: 1rem;
   filter: drop-shadow(3px 3px 8px var(--lpurp));
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.Card:hover {
+  transform: scale(1.02);
+}
+
+.Card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--lpurp), var(--dpurp));
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.Card h1 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+
+.Card.Map {
+  max-width: 100%; /* Ensure the div does not exceed the width of its parent */
+  display: inline-block; /* Display the div as an inline block */
+  text-align: center; /* Center the content horizontally within the div */
+}
+
+.Card.Map img {
+  max-width: 100%; /* Ensure the image does not exceed the width of its parent */
+  height: auto; /* Maintain the image's aspect ratio */
+  border-radius: 1rem;
 }
 
 
 body {
   background-color: var(--white);
   font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
 
 }
 
 h1, h2, h3 {
   font-family: 'Calistoga', serif;
-  color: var(--white);
 }
 
 h2 {
   font-size: 3rem;
-  color: var(--dpurp);
 
 }
 
@@ -41,20 +80,59 @@ h2 {
 
 .nav {
   display: flex;
-justify-content: center;
+  justify-content: center;
+  
   gap: 1rem;
   padding: 1rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--red);
   font-size: 1.6rem;
+  background: linear-gradient(45deg, var(--red), var(--lpurp));
+  transition: background 0.3s ease;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
 }
+
+.nav > a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: var(--red);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease;
+}
+
+.nav > a:hover {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav > a:hover::before {
+  transform: scaleX(1);
+}
+
 
 
 .container {  
   margin: 0 auto;
+  width:100%;
+  justify-content: center;
+ align-items: stretch;
   padding: 1rem;
   display: grid;
+  
   grid-template-rows: repeat(2, auto) repeat(3, 1fr) repeat(2, auto);
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -78,42 +156,94 @@ justify-content: center;
   text-align: center;
 }
 
+
 input, textarea {
     display: block;
-    width: 100%;
-    padding: 0.5rem 1rem;
-    border: 1px solid #fff;
+    margin: 1rem auto 0;
+    width: 80%;
+    padding: 1rem;
+    border: 1px solid var(--white);
     border-radius: 0.5rem;
-    color: #3f37c9; 
+    color: var(--dpurp); 
     outline: none;
-    background-color: #a4b0f4; 
-  
+    background-color: var(--lpurp); 
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--dpurp);
 }
 
 button {
-  margin: 0.5rem 0;
+  margin: 1rem auto 0;
+  font-size: 1rem;
   width: 50%; /* 1/2 width */
   padding: 0.5rem 1rem;
-  border: 2px solid #fff;
-  color: #fff;
-  background-color: #3f37c9; /* Background color for default state */
+  border: 1px solid #fff;
+  background-color: var(--lpurp); /* Background color for default state */
   border-radius: 0.5rem;
+  border-color: var(--white);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
+  color: var(--dpurp);
 }
 
 button:hover {
-  background-color: #5a67d8; /* Background color for hover state */
+  font-weight: bold;
+  background-color: var(--white); /* Background color for hover state */
 }
 
 button:focus {
   outline: none;
-  background-color: #5a67d8; /* Background color for focus state */
+  background-color: var(--white); /* Background color for focus state */
+}
+
+.Dark {
+  background-color: var(--dpurp);
+  filter: drop-shadow(3px 3px 8px var(--dpurp));
+  color: var(--white);
+}
+
+.Dark .Card h2  {
+  color: var(--white);
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-label {
+  display: flex;
+  background-color: #ccc;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.toggle-label i {
+  font-size: 1.5rem;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.hidden {
+  display: none;
+}
+
+#switch:checked + .toggle-label i.fa-sun {
+  transform: translateX(5rem);
+}
+
+#switch:checked + .toggle-label i.fa-moon {
+  transform: translateX(-0.5rem);
 }
 
 
 @media only screen and (min-width: 600px){
   .container {  
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -130,6 +260,7 @@ button:focus {
 
   @media only screen and (min-width: 1200px) {
     .container {
+      width: 80%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;

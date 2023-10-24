@@ -1,8 +1,8 @@
 
-function About() {
+function About({ isDarkMode }) {
   return (
 
-        <div className='Card About' id='About'>
+        <div className={`Card About ${isDarkMode ? "Dark" : null}`} id='About'>
       <h2>Hi! I'm Mads</h2>
     <p>I'm a React Developer, passionate about building cool things that help people.</p>
     <p>email me at madeleine.vercoe at gmail.com</p>
@@ -33,7 +33,7 @@ function About() {
             <span>React</span>
         </div>
         <div>
-            <i class="fab fa-css3-alt"></i>
+            <i className="fab fa-css3-alt"></i>
             <span>CSS 3</span>
         </div>
         </div>

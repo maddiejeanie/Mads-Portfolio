@@ -1,7 +1,7 @@
 
-function Map() {
+function Map({ isDarkMode }) {
   return (
-        <div className="Card Map" id="map"> 
+        <div className={`Card Map ${isDarkMode ? "Dark": null}`} id="map"> 
       <img src="images/map.png" />
       </div>
   );
