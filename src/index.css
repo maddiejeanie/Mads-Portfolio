@@ -1,3 +1,5 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 :root {
   --lpurp: #AAA1FF;
@@ -9,11 +11,12 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .Card {
   background-color: var(--lpurp);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
   filter: drop-shadow(3px 3px 8px var(--lpurp));
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -22,7 +25,7 @@
 }
 
 .Card:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .Card::before {
@@ -45,15 +48,15 @@
 }
 
 
-.Card.Map {
-  max-width: 100%; /* Ensure the div does not exceed the width of its parent */
-  display: inline-block; /* Display the div as an inline block */
-  text-align: center; /* Center the content horizontally within the div */
+.Card {
+  max-width: 100%; 
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
 }
-
-.Card.Map img {
-  max-width: 100%; /* Ensure the image does not exceed the width of its parent */
-  height: auto; /* Maintain the image's aspect ratio */
+.Card img {
+  max-width: 100%; 
+  height: auto; 
   border-radius: 1rem;
 }
 
@@ -67,10 +70,11 @@ body {
 
 h1, h2, h3 {
   font-family: 'Calistoga', serif;
+  letter-spacing: 0.125rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 
 }
 
@@ -78,12 +82,13 @@ h2 {
   background-color: var(--white);
 }
 
-.nav {
+.Nav {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  
+  align-items: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.5rem;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.6rem;
@@ -94,14 +99,14 @@ h2 {
 
 }
 
-.nav > a {
+.Nav > a {
   color: var(--white);
   text-decoration: none;
   transition: color 0.3s ease;
   position: relative;
 }
 
-.nav > a::before {
+.Nav > a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -127,34 +132,41 @@ h2 {
 
 .container {  
   margin: 0 auto;
-  width:100%;
+  width: 100%;
   justify-content: center;
  align-items: stretch;
-  padding: 1rem;
+  padding: 1.5rem;
   display: grid;
   
-  grid-template-rows: repeat(2, auto) repeat(3, 1fr) repeat(2, auto);
+  grid-template-rows: auto;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
   grid-template-areas:
+    "Nav"
     "About"
-    "About"
-    "Mode"
+    "Tech"
     "Projects"
-    "Projects"
-    "Projects"
-    "Map"
     "Map"
     "Spotify"
+    "Github"
     "Contact";
-}
+}  
+
 
 .list {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  text-align: center;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1rem;
+  text-align: left;
 }
+
+.bold-text {
+  font-weight: bold;
+  grid-column: span 2;
+}
+
+
+
 
 
 input, textarea {
@@ -245,16 +257,16 @@ button:focus {
   .container {  
     width: 70%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 1rem 1rem;
+    gap: 1rem;
     grid-template-areas:
+      "Nav Nav"
       "About About"
-      "Mode Spotify"
+      "Spotify Tech" 
+      "Spotify Tech"
       "Projects Projects"
       "Projects Projects"
-      "Map Contact"
-      "Map Contact";
+      "Github Github"
+      "Contact Contact";
   }}
   
 
@@ -262,28 +274,28 @@ button:focus {
     .container {
       width: 80%;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      gap: 1rem;
+            gap: 1rem;
       grid-template-areas:
+        "Nav Nav Nav Nav"
         "About About Contact Contact"
         "About About Contact Contact"
-        "Map Projects Projects Mode"
-        "Map Projects Projects Spotify"
-        "Map Projects Projects Spotify";
+        "Map Projects Projects Tech"
+        "Map Projects Projects Tech"
+        "Spotify Projects Projects Tech"
+        "Github Github Github Github";
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* Equal width columns */
+    grid-template-rows: auto auto auto 1fr 1fr 1fr 1fr; 
     }
   }
   
 
 .About { grid-area: About; }
-
 .Contact { grid-area: Contact; }
-
 .Mode { grid-area: Mode; }
-
 .Spotify { grid-area: Spotify; }
-
 .Map { grid-area: Map; }
-
+.Github { grid-area: Github; }
 .Projects { grid-area: Projects; }
+.Nav { grid-area: Nav;}
+.Tech { grid-area: Tech;}
 

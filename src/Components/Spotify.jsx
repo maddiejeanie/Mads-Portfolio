@@ -1,5 +1,8 @@
 
 function Spotify({ isDarkMode }) {
+
+
+
   return (
     
               <div className={`Card Spotify ${isDarkMode ? "Dark": null}`} id='Spotify'>

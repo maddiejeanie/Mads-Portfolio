@@ -14,30 +14,8 @@ function About({ isDarkMode }) {
     <a href="https://linkedin.com"><i className="fab fa-linkedin"></i></a>
     <a href="https://discord.com"><i className="fab fa-discord"></i></a>
 </div>
+</div>
 
-<div className="list">
-        <div>
-            <i className="fab fa-html5"></i>
-            <span>Html 5</span>
-        </div>
-        <div>
-            <i className="fab fa-square-js"></i>
-            <span>Javascript ES6</span>
-        </div>
-        <div>
-            <i className="fab fa-node-js"></i>
-            <span>Node JS</span>
-        </div>
-        <div>
-            <i className="fab fa-react"></i>
-            <span>React</span>
-        </div>
-        <div>
-            <i className="fab fa-css3-alt"></i>
-            <span>CSS 3</span>
-        </div>
-        </div>
-    </div>
     );
 }
 
