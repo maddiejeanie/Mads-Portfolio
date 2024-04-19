@@ -4,7 +4,7 @@ function About({ isDarkMode }) {
 
         <div className={`Card About ${isDarkMode ? "Dark" : null}`} id='About'>
       <h2>Hi! I'm Mads</h2>
-    <p>I'm a React Developer, passionate about building cool things that help people.</p>
+    <p>I'm a React Developer, passionate about building cool things that help people and make life easier.</p>
     <p>email me at madeleine.vercoe at gmail.com</p>
 
     <p>I enjoy gaming, live music & my two cats - Billy & BonBon.</p>

@@ -1,5 +1,6 @@
-@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
-@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 
 :root {
   --lpurp: #AAA1FF;
@@ -7,6 +8,13 @@
   --white: #EEE9F7;
   --black: #251D45;
   --red: #BD2A3E;
+
+  --primary-color: #333;
+  --secondary-color: #6c757d;
+  --accent-color: #AAA1FF;;
+  --background-color: #f8f9fa;
+  --font-family-sans: 'Roboto', sans-serif;
+  --font-family-serif: 'Montserrat', serif;
 }
 
 * {
@@ -14,144 +22,84 @@
   margin: 0;
 }
 
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family-sans);
+  line-height: 1.6;
+  color: var(--primary-color);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-family-serif);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
 .Card {
-  background-color: var(--lpurp);
+  background-color: #fff;
   padding: 1rem;
-  border-radius: 1rem;
-  filter: drop-shadow(3px 3px 8px var(--lpurp));
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
 .Card:hover {
-  transform: scale(1.01);
-}
-
-.Card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, var(--lpurp), var(--dpurp));
-  opacity: 0.3;
-  pointer-events: none;
-  z-index: -1;
+  transform: translateY(-5px);
 }
 
 .Card h1 {
-  color: white;
+  color: var(--primary-color);
   font-size: 1.5rem;
   margin: 0;
 }
 
-
-.Card {
-  max-width: 100%; 
-  display: flex;
-  flex-direction: column;
-  text-align: center; 
-}
 .Card img {
-  max-width: 100%; 
-  height: auto; 
-  border-radius: 1rem;
-}
-
-
-body {
-  background-color: var(--white);
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-
-}
-
-h1, h2, h3 {
-  font-family: 'Calistoga', serif;
-  letter-spacing: 0.125rem;
-}
-
-h2 {
-  font-size: 2rem;
-
-}
-
-.varwhite {
-  background-color: var(--white);
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
 }
 
 .Nav {
+  background-color: var(--primary-color);
+  padding: 1rem;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  padding: 0.5rem;
+}
+
+.Nav a {
+  color: #fff;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.6rem;
-  background: linear-gradient(45deg, var(--red), var(--lpurp));
-  transition: background 0.3s ease;
-  border-radius: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-
-}
-
-.Nav > a {
-  color: var(--white);
-  text-decoration: none;
   transition: color 0.3s ease;
-  position: relative;
 }
 
-.Nav > a::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background: var(--red);
-  bottom: -5px;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition: transform 0.3s ease;
+.Nav a:hover {
+  color: var(--accent-color);
 }
 
-.nav > a:hover {
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.nav > a:hover::before {
-  transform: scaleX(1);
-}
-
-
-
-.container {  
+.container {
   margin: 0 auto;
   width: 100%;
   justify-content: center;
- align-items: stretch;
+  align-items: stretch;
   padding: 1.5rem;
-  display: grid;
-  
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  grid-template-areas:
-    "Nav"
-    "About"
-    "Tech"
-    "Projects"
-    "Map"
-    "Spotify"
-    "Github"
-    "Contact";
-}  
-
+}
 
 .list {
   display: grid;
@@ -165,62 +113,53 @@ h2 {
   grid-column: span 2;
 }
 
-
-
-
-
-input, textarea {
-    display: block;
-    margin: 1rem auto 0;
-    width: 80%;
-    padding: 1rem;
-    border: 1px solid var(--white);
-    border-radius: 0.5rem;
-    color: var(--dpurp); 
-    outline: none;
-    background-color: var(--lpurp); 
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+input,
+textarea {
+  display: block;
+  margin: 1rem auto 0;
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.25rem;
+  color: var(--primary-color);
+  outline: none;
+  background-color: #fff;
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
 }
 
-input::placeholder, textarea::placeholder {
-  color: var(--dpurp);
+input::placeholder,
+textarea::placeholder {
+  color: var(--secondary-color);
 }
 
 button {
   margin: 1rem auto 0;
   font-size: 1rem;
-  width: 50%; /* 1/2 width */
+  width: 50%;
   padding: 0.5rem 1rem;
-  border: 1px solid #fff;
-  background-color: var(--lpurp); /* Background color for default state */
-  border-radius: 0.5rem;
-  border-color: var(--white);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
-  color: var(--dpurp);
+  border: none;
+  background-color: var(--accent-color);
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  font-weight: bold;
-  background-color: var(--white); /* Background color for hover state */
-}
-
-button:focus {
-  outline: none;
-  background-color: var(--white); /* Background color for focus state */
+  background-color: #0056b3;
 }
 
 .Dark {
-  background-color: var(--dpurp);
-  filter: drop-shadow(3px 3px 8px var(--dpurp));
-  color: var(--white);
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
-.Dark .Card h2  {
-  color: var(--white);
+.Dark .Card h2 {
+  color: #fff;
 }
 
+/* Toggle Switch */
 .toggle {
   display: flex;
   align-items: center;
@@ -252,42 +191,43 @@ button:focus {
   transform: translateX(-0.5rem);
 }
 
-
-@media only screen and (min-width: 600px){
-  .container {  
-    width: 70%;
+/* Media Queries */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 80%;
     display: grid;
     gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
       "Nav Nav"
-      "About About"
-      "Spotify Tech" 
-      "Spotify Tech"
+      "About Spotify"
+      "Map Tech"
+      "Map Tech"
       "Projects Projects"
       "Projects Projects"
       "Github Github"
       "Contact Contact";
-  }}
-  
-
-  @media only screen and (min-width: 1200px) {
-    .container {
-      width: 80%;
-      display: grid;
-            gap: 1rem;
-      grid-template-areas:
-        "Nav Nav Nav Nav"
-        "About About Contact Contact"
-        "About About Contact Contact"
-        "Map Projects Projects Tech"
-        "Map Projects Projects Tech"
-        "Spotify Projects Projects Tech"
-        "Github Github Github Github";
-        grid-template-columns: 1fr 1fr 1fr 1fr; /* Equal width columns */
-    grid-template-rows: auto auto auto 1fr 1fr 1fr 1fr; 
-    }
   }
-  
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 80%;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+      "Nav Nav Nav Nav"
+      "About About Contact Contact"
+      "About About Contact Contact"
+      "Map Projects Projects Tech"
+      "Map Projects Projects Tech"
+      "Spotify Projects Projects Tech"
+      "Github Github Github Github";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr 1fr 1fr auto;
+  }
+}
 
 .About { grid-area: About; }
 .Contact { grid-area: Contact; }
@@ -296,6 +236,5 @@ button:focus {
 .Map { grid-area: Map; }
 .Github { grid-area: Github; }
 .Projects { grid-area: Projects; }
-.Nav { grid-area: Nav;}
-.Tech { grid-area: Tech;}
-
+.Nav { grid-area: Nav; }
+.Tech { grid-area: Tech; }

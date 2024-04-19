@@ -8,14 +8,14 @@ function App() {
   return (
     <div >  
       <div className="container">
-        <Nav isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <Nav isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <About isDarkMode={isDarkMode} />
+        <Tech isDarkMode = {isDarkMode} /> 
         <Map isDarkMode={isDarkMode} />
         <GitHub isDarkMode={isDarkMode} />
         <Projects isDarkMode={isDarkMode} />
         <Contact isDarkMode={isDarkMode} />
         <Spotify isDarkMode={isDarkMode} />
-        <Tech isDarkMode = {isDarkMode} />
       </div>
     </div>
   );
