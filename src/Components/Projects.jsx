@@ -1,6 +1,6 @@
-function Projects({ isDarkMode }) {
+function Projects() {
   return (
-<div className={`Card Projects ${isDarkMode ? "Dark": null}`} id='Projects'>
+<div className={``} id='Projects'>
       <h2>Projects</h2>
 
       <h3>Title of Project</h3>

@@ -1,6 +1,6 @@
-function Tech({ isDarkMode }) {
+function Tech() {
     return (
-   <div className={`Card Tech  ${isDarkMode ? "Dark" : null}`} id='Tech'>
+   <div className={`bg-red-300`} id='Tech'>
       <div className="list">
         <p className="bold-text">Programming Languages:</p>
         <div>

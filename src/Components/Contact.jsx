@@ -1,7 +1,7 @@
 
-function Contact({ isDarkMode }) {
+function Contact() {
   return (
-              <div className={`Card Contact ${isDarkMode ? "Dark": null}`} id='Contact'>
+              <div className={``} id='Contact'>
       <h2>Contact</h2>
       <form action="https://getform.io/f/3d45e44f-c964-4deb-8055-0933fa59eb9a" method="POST">
     
