@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { ProjectData } from '../assets/data/ProjectData.jsx';
+import { projectData } from '../assets/data/projectData.jsx';
 
 const Projects = () => {
   const settings = {
@@ -25,7 +25,7 @@ const Projects = () => {
       
 
           
-      {ProjectData.map((project, index) => (
+      {projectData.map((project, index) => (
         <div key={index} >
 
           <div className="px-8 py-4">
