@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Projects, Contact, GitHub, Nav, Tech } from '/src/components';
+import { About, Projects, Contact, GitHub, Nav, Tech } from '/src/Components';
 
 function App() {
 
