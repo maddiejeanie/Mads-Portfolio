@@ -1,9 +1,14 @@
 import React from 'react';
-
+import {Github} from './Github';
 function About() {
   return (
-    <div className="flex flex-col h-screen justify-between p-8">
+    <div id="About" className="flex flex-col justify-between p-8">
+         <p className="h3 text-2xl text-center">
+ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM<br></br>
+COPYRIGHT 2075-2077 ROBCO INDUSTRIES
+</p>
         <div className="md:w-1/2 md:mb-0">
+          
           <div className="relative">
             <div className="h-64 w-64 rounded-full mx-auto bg-violet-100"></div>
             <img
@@ -14,8 +19,9 @@ function About() {
           </div>
         </div>
         <div className="md:w-1/2 flex flex-col md:items-start">
+       
           <p className="text-7xl h1 font-bold text-purple-200 mb-4 uppercase tracking-wide 	">
-          > Hi! I'm Maddie<span className="animate-ping font-black tracking-tight">|</span>
+          &gt;Hi! I'm Maddie<span className="animate-ping font-black tracking-tighter">|</span>
           </p>
           <p className="text-4xl leading-relaxed mb-2">
             I'm a React Developer, passionate about building helpful, functional tech that makes life easier.
@@ -26,7 +32,7 @@ function About() {
           </p>
         </div>
       
-      <div className="flex self-center mb-8 text-center gap-10">
+      <div className="flex self-center mb-8 text-center gap-10 pt-8">
         <a href="https://github.com/maddiejeanie" className="text-gray-600 hover:text-purple-600 transition-colors duration-300 mr-4">
           <i className="fab fa-github fa-2x"></i>
           <p>github</p>
@@ -35,12 +41,13 @@ function About() {
           <i className="fab fa-linkedin fa-2x"></i>
           <p>linkedin</p>
         </a>
-        <a href="https://linkedin.com/madeleinenovak" className="text-gray-600 hover:text-purple-600 transition-colors duration-300">
+        <a href="/src/assets/data/maddie-novak-2024-resume.pdf" className="text-gray-600 hover:text-purple-600 transition-colors duration-300">
           <i className="fa fa-file-pdf-o fa-2x"></i>
           <p>resume pdf</p>
         </a>
       </div>
     </div>
+    
   );
 }
 

@@ -5,7 +5,7 @@ function Contact() {
     <div id="Contact" className="">
             
       <div className="container mx-auto px-4">
-      <h2 className="text-5xl h2 font-bold text-purple-200 mb-4 uppercase tracking-wide">
+      <h2 className="text-5xl h2 font-bold text-purple-200 mb-8 uppercase tracking-wide">
           Contact </h2>
         <form
           action="https://getform.io/f/3d45e44f-c964-4deb-8055-0933fa59eb9a"

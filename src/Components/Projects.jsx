@@ -36,7 +36,7 @@ const Projects = () => {
                   <img
                     src={image}
                     alt={`Project ${project.name}`}
-                    className="mx-auto rounded-lg shadow-lg"
+                    className="touch-auto mx-auto rounded-lg shadow-lg"
                   />
                 </div>
               ))}

@@ -10,6 +10,7 @@ import {
   SiVite,
   SiFirebase,
   SiWordpress,
+  SiKentico,
   SiAzuredevops,
   SiBabel,
   SiJasmine,
@@ -60,6 +61,7 @@ function Tech() {
           <h2 className="text-xl font-bold mb-4">Content Management Systems</h2>
           <IconLabel Icon={SiSanity} label="Sanity CMS" />
           <IconLabel Icon={SiWordpress} label="WordPress" />
+          <IconLabel Icon={SiKentico} label="Kentico" />
         </div>
 
         <div>
