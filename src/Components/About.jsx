@@ -15,7 +15,7 @@ function About() {
         </div>
         <div className="md:w-1/2 flex flex-col md:items-start">
           <p className="text-7xl h1 font-bold text-purple-200 mb-4 uppercase tracking-wide 	">
-          > Hi! I'm Maddie <span className="animate-ping font-bold">|</span>
+          > Hi! I'm Maddie<span className="animate-ping font-black tracking-tight">|</span>
           </p>
           <p className="text-4xl leading-relaxed mb-2">
             I'm a React Developer, passionate about building helpful, functional tech that makes life easier.
