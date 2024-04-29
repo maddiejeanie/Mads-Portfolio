@@ -9,20 +9,20 @@ function About() {
             <img
               className="absolute top-0 left-0 right-0 bottom-0 mx-auto rounded-full w-60 h-60 object-cover drop-shadow-2xl shadow-2xl  shadow-violet-100	  transparent"
               src="/images/vault-m.png"
-              alt="yes fallout"
+              alt="yes, it's fallout themed"
             />
           </div>
         </div>
         <div className="md:w-1/2 flex flex-col md:items-start">
           <p className="text-7xl h1 font-bold text-purple-200 mb-4 uppercase tracking-wide 	">
-          Hi! I'm Maddie <span className="animate-ping">_</span>
+          > Hi! I'm Maddie <span className="animate-ping font-bold">|</span>
           </p>
           <p className="text-4xl leading-relaxed mb-2">
-            I'm a React Developer, passionate about building helpful, functional tech that make life easier.
+            I'm a React Developer, passionate about building helpful, functional tech that makes life easier.
           </p>
           <p className="text-gray-100 font-mono mb-2">email me at madeleinejnovak@gmail.com</p>
           <p className="italic text-center md:text-left">
-            I like coffee, gaming, live music, my two cats - Billy & BonBon, memes, learning new things. Learn more:
+            I like coffee, futurology, gaming, live music, my two cats - Billy & BonBon, memes, learning new things. Learn more:
           </p>
         </div>
       
