@@ -41,23 +41,36 @@ const Projects = () => {
                 </div>
               ))}
             </Slider>
-          
+          <div className='w-2/3 mx-auto'>
           <p className="mt-8">{project.description}</p>
-          <div className="mt-4 flex justify-center">
+          <div className='flex flex-wrap my-2'>
+  {project.tech.map((tag, techIndex) => (
+    <span
+      className="inline-block bg-gray-200 text-gray-800 my-2 py-1 px-4 rounded-full mx-2 font-mono align-middle"
+      key={techIndex}
+    >
+      <i className="fa fa-tag pr-1" aria-hidden="true"></i>
+      {tag}
+    </span>
+  ))}
+</div>
+          <div className="mt-4 flex justify-center text-center">
             <a
-              className="bg-violet-500 hover:bg-violet-600 uppercase tracking-widest text-white py-2 px-4 rounded transition-colors duration-300 mr-4"
+              className=" w-full bg-violet-500 hover:bg-violet-500/70 uppercase tracking-widest text-white py-2 px-4 rounded transition-colors duration-300 mr-4"
               href={project.link}
             >
               Live
             </a>
             <a
-              className="bg-violet-500 hover:bg-violet-600 uppercase tracking-widest text-white py-2 px-4 rounded transition-colors duration-300"
+              className=" w-full bg-violet-500 hover:bg-violet-500/70 uppercase tracking-widest text-white py-2 px-4 rounded transition-colors duration-300"
               href={project.gitLink}
             >
               Code
             </a>
           </div>
           </div>
+          </div>
+
         </div>
       ))}
     </div>
