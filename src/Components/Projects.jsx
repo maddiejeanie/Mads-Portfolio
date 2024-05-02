@@ -28,7 +28,7 @@ const Projects = () => {
       {projectData.map((project, index) => (
         <div key={index} >
 
-          <div className="px-8 py-4">
+          <div className="px-8 py-4 md:w-3/4 mx-auto">
           <h2 className="text-3xl font-bold mb-4 ">{project.name}</h2>
             <Slider {...settings}>
               {project.images.map((image, imageIndex) => (
@@ -36,12 +36,11 @@ const Projects = () => {
                   <img
                     src={image}
                     alt={`Project ${project.name}`}
-                    className="touch-auto mx-auto rounded-lg shadow-lg"
+                    className="touch-auto mx-auto rounded-lg shadow-lg "
                   />
                 </div>
               ))}
             </Slider>
-          <div className='w-2/3 mx-auto'>
           <p className="mt-8">{project.description}</p>
           <div className='flex flex-wrap my-2'>
   {project.tech.map((tag, techIndex) => (
@@ -67,7 +66,6 @@ const Projects = () => {
             >
               Code
             </a>
-          </div>
           </div>
           </div>
 

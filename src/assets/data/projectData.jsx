@@ -3,7 +3,7 @@ export const projectData =  [
         {
             id: 1,
             name: 'Ally Online Coach',
-            images: ['images/ally-1.png', 'images/ally-2.png', 'images/mobile-1.png', 'images/mobile-2.png', 'images/mobile-3.png'],
+            images: ['images/ally-1.png', 'images/ally-2.png', 'images/ally-3.png', 'images/mobile-1.png'],
             description: "This service website for a personal trainer is a comprehensive platform consolidating fitness coaching tools. Leveraging SanityCMS, dynamic content sections (blog, testimonials) can be updated via the client. The mobile-responsive design ensures optimal user experience across devices, while a dynamic color theme changer enhances visual aesthetics based on where the user is on the website.",
             tech: ["Sanity CMS", "Tailwind CSS", "Vite", "React"],
             link: 'https://ally-online-coach.vercel.app/',
