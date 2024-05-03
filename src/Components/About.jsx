@@ -17,7 +17,6 @@ className={`mx-auto w-60 h-60 cursor-pointer rounded-full border-4 ${isDarkMode 
 src={isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'}
               alt="yes, it's fallout themed"
               onMouseEnter={(e) => { e.currentTarget.src = '/images/madeleine-novak.jpg'; }}
-              onMouseClick={(e) => { e.currentTarget.src = '/images/madeleine-novak.jpg'; }}
 
               onMouseLeave={(e) => { e.currentTarget.src = isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'; }}
               />
