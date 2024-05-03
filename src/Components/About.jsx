@@ -12,16 +12,17 @@ COPYRIGHT 2075-2077 ROBCO INDUSTRIES<br></br>
 </h3>
     
           
-        <div className="flex flex-col md:flex-row-reverse items-center">
-        <img
-className={`mx-auto w-60 h-60 cursor-pointer rounded-full border-4 ${isDarkMode ? 'border-purple-200' : 'border-violet-900'}`}
-src={isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'}
-              alt="yes, it's fallout themed"
-              onMouseEnter={(e) => { e.currentTarget.src = '/images/madeleine-novak.jpg'; }}
-
-              onMouseLeave={(e) => { e.currentTarget.src = isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'; }}
-              />
-       <div>
+<div className="flex flex-col md:flex-row-reverse items-center">
+  <img
+    className={`mx-auto w-60 h-60 cursor-pointer rounded-full border-4 ${isDarkMode ? 'border-purple-200' : 'border-violet-900'}`}
+    src={isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'}
+    alt="yes, it's fallout themed"
+    onMouseEnter={(e) => { e.currentTarget.src = '/images/madeleine-novak.jpg'; }}
+    onMouseLeave={(e) => { e.currentTarget.src = isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'; }}
+    onTouchStart={(e) => { e.currentTarget.src = '/images/madeleine-novak.jpg'; }}
+    onTouchEnd={(e) => { e.currentTarget.src = isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'; }}
+  />
+  <div>
        <p className={`text-7xl h1 font-bold my-8 uppercase tracking-wide`}>
           &gt;Hi! I'm Maddie<span className="animate-ping font-black tracking-tighter">|</span>
           </p>
@@ -41,10 +42,13 @@ src={isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'}
           <i className="fab fa-github fa-2x"></i>
           <p>github</p>
         </a>
-        <a href="https://linkedin.com/madeleinenovak" className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 mr-4`} > <i className="fab fa-linkedin fa-2x"></i>
+        <a href="https://linkedin.com/in/maddienovak" className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 mr-4`} > <i className="fab fa-linkedin fa-2x"></i>
           <p>linkedin</p>
         </a>
-        <a href="/src/assets/data/maddie-novak-2024-resume.pdf" className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 mr-4`}>
+        <a href="/maddie-novak-2024-resume.pdf" 
+            target="_blank"
+            rel="noopener noreferrer"
+            download className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 mr-4`}>
           <i className="fa fa-file-pdf-o fa-2x"></i>
           <p>resume pdf</p>
         </a>
