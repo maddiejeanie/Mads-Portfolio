@@ -1,5 +1,4 @@
 import React from 'react';
-import GitHub from './GitHub.jsx';
 
 function About({ isDarkMode }) {
 
@@ -51,7 +50,6 @@ src={isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'}
         </a>
       </div>
       
-          <GitHub isDarkMode={isDarkMode} />
   
           </div>
     
