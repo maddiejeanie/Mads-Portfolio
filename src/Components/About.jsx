@@ -27,7 +27,7 @@ COPYRIGHT 2075-2077 ROBCO INDUSTRIES<br></br>
           &gt;Hi! I'm Maddie<span className="animate-ping font-black tracking-tighter">|</span>
           </p>
           <p className="text-2xl lg:text-4xl leading-relaxed mb-2">
-            I'm a React Developer, passionate about building helpful, functional tech that makes life easier.
+            I'm a React Developer, based in Sydney, Australia. I'm passionate about building helpful, functional tech that makes life easier.
           </p>
         
           </div>
