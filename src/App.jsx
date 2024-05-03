@@ -1,7 +1,6 @@
 import React from 'react';
-import { About, Projects, Contact, Github, Nav, Tech } from './Components';
+import { About, Projects, Contact, Nav, Tech } from './Components/Index.jsx';
 import { ModeProvider, DarkModeContext } from './Components/ModeContext.jsx';
-import Mode from './Components/Mode.jsx';
 
 function App() {
   return (
@@ -12,6 +11,7 @@ function App() {
             <Nav isDarkMode={isDarkMode} />
             <div className={`sm:w-2/3 mx-auto flex flex-col ${isDarkMode ? 'text-purple-200' : 'text-purple-800'} p-4 scroll-snap-align-center pt-16 space-y-16`}>
               <About isDarkMode={isDarkMode} />
+              
               <Tech isDarkMode={isDarkMode} />
               <Projects isDarkMode={isDarkMode} />
               <Contact isDarkMode={isDarkMode} />
