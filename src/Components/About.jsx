@@ -1,5 +1,5 @@
 import React from 'react';
-import GitHub from './Components/GitHub';
+import GitHub from './GitHub.jsx';
 
 function About({ isDarkMode }) {
 
