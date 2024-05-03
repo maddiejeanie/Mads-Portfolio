@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { About, Projects, Contact, Nav, Tech, ModeProvider, DarkModeContext } from './Components';
+import { About, Projects, Contact, Nav, Tech, ModeProvider, DarkModeContext } from './Components/Index.jsx';
 
 function App() {
   const { isDarkMode } = useContext(DarkModeContext);
