@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contact({ isDarkMode }) {
   return (
-    <div id="Contact" className="">
+    <div id="Contact" className="scroll-mt-20">
             
       <div className=" mx-auto px-4 pb-4">
       <h2 className={`text-5xl h2 font-bold ${isDarkMode ? 'text-purple-200' : 'text-purple-800'} mb-8 uppercase tracking-wide`}>

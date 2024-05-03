@@ -35,7 +35,7 @@ function Tech({ isDarkMode }) {
   );
 
   return (
-    <div id="Tech" className="p-4">
+    <div id="Tech" className="p-4 scroll-mt-20">
           <h2 className={`text-5xl h2 font-bold  ${isDarkMode ? 'text-purple-200' : 'text-purple-800'} mb-4 uppercase tracking-wide text-shadow-lg text-shadow-pink-400`}>
           Tech </h2>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">

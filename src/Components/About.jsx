@@ -3,8 +3,8 @@ function About({ isDarkMode }) {
 
 
   return (
-    <div id="About" className={`flex flex-col justify-between ${isDarkMode ? 'text-purple-200' : 'text-violet-900'}  p-8 space-y-4 sm:space-y-24 `}>
-       <h3 className="h3 text-3xl text-center">
+    <div id="About" className={`scroll-mt-20 flex flex-col justify-between ${isDarkMode ? 'text-purple-200' : 'text-violet-900'}  p-8 space-y-4 sm:space-y-24 `}>
+       <h3 className="h3 text-lg sm:text-3xl text-center">
 ROBCO INDUSTRIES UNIFIED OPERATING SYSTEM<br></br>
 COPYRIGHT 2075-2077 ROBCO INDUSTRIES<br></br>
 - Display 1 -
@@ -17,6 +17,8 @@ className={`mx-auto w-60 h-60 cursor-pointer rounded-full border-4 ${isDarkMode 
 src={isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'}
               alt="yes, it's fallout themed"
               onMouseEnter={(e) => { e.currentTarget.src = '/images/madeleine-novak.jpg'; }}
+              onMouseClick={(e) => { e.currentTarget.src = '/images/madeleine-novak.jpg'; }}
+
               onMouseLeave={(e) => { e.currentTarget.src = isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'; }}
               />
        <div>

@@ -2,7 +2,7 @@ import React from 'react';
 import Mode from './Mode';
 
 function Nav({ isDarkMode }) {
-  const navClasses = `scroll-mt-20 border-transparent border-x-4 hover:border-violet-300 hover:border-solid p-4 -mb-1
+  const navClasses = `border-transparent border-x-4 hover:border-violet-300 hover:border-solid p-2 sm:p-4 -mb-1
   ${isDarkMode ? 'hover:bg-gray-800' : 'hover:bg-gray-200'}`;
   return (
     <div

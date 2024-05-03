@@ -22,7 +22,7 @@ function Projects({ isDarkMode }) {
     <div>
     <h2 className={`text-5xl h2 font-bold ${isDarkMode ? 'text-purple-200' : 'text-purple-800'} mb-4 uppercase tracking-wide text-shadow-lg text-shadow-pink-400`}>
     Projects </h2>
-    <div id='Projects'  className="mx-auto">
+    <div id='Projects'  className="scroll-mt-40 mx-auto">
       
 
           
