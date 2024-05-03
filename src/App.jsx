@@ -1,5 +1,5 @@
 import React from 'react';
-import { About, Projects, Contact, Nav, Tech } from './Components/Index.jsx';
+import { About, Projects, Contact, Nav, Tech } from '/src/Components';
 import { ModeProvider, DarkModeContext } from './Components/ModeContext.jsx';
 
 function App() {
