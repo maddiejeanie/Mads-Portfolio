@@ -1,16 +1,16 @@
 import React from 'react';
 
-function Contact() {
+function Contact({ isDarkMode }) {
   return (
     <div id="Contact" className="">
             
-      <div className=" mx-auto px-4">
-      <h2 className="text-5xl h2 font-bold text-purple-200 mb-8 uppercase tracking-wide">
+      <div className=" mx-auto px-4 pb-4">
+      <h2 className={`text-5xl h2 font-bold ${isDarkMode ? 'text-purple-200' : 'text-purple-800'} mb-8 uppercase tracking-wide`}>
           Contact </h2>
         <form
           action="https://getform.io/f/3d45e44f-c964-4deb-8055-0933fa59eb9a"
           method="POST"
-          className="w-2/3 mx-auto"
+          className="w-3/4 px-4 mx-auto"
         >
           <div className="mb-4">
             <input

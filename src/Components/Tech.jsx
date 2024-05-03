@@ -22,17 +22,21 @@ import {
   SiAdobexd,
 } from 'react-icons/si';
 
-const IconLabel = ({ Icon, label }) => (
-  <div className="flex items-center space-x-2 mb-4 text-gray-200">
-    <Icon className="text-2xl " />
-    <span className=''>{label}</span>
-  </div>
-);
 
-function Tech() {
+
+function Tech({ isDarkMode }) {
+
+  const IconLabel = ({ Icon, label }) => (
+    <div className={`flex items-center space-x-2 mb-4 ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
+  
+      <Icon className="text-2xl " />
+      <span className=''>{label}</span>
+    </div>
+  );
+
   return (
     <div id="Tech" className="p-4">
-          <h2 className="text-5xl h2 font-bold text-purple-200 mb-4 uppercase tracking-wide text-shadow-lg text-shadow-pink-400">
+          <h2 className={`text-5xl h2 font-bold  ${isDarkMode ? 'text-purple-200' : 'text-purple-800'} mb-4 uppercase tracking-wide text-shadow-lg text-shadow-pink-400`}>
           Tech </h2>
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
         <div>

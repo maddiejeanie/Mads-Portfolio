@@ -4,9 +4,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { projectData } from '../assets/data/projectData.jsx';
 
-const Projects = () => {
+function Projects({ isDarkMode }) {
   const settings = {
-    dots: true,
+    dots: isDarkMode ? false : true,
+    arrows: isDarkMode ? true : false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -19,7 +20,7 @@ const Projects = () => {
 
   return (
     <div>
-    <h2 className="text-5xl h2 font-bold text-purple-200 mb-4 uppercase tracking-wide text-shadow-lg text-shadow-pink-400">
+    <h2 className={`text-5xl h2 font-bold ${isDarkMode ? 'text-purple-200' : 'text-purple-800'} mb-4 uppercase tracking-wide text-shadow-lg text-shadow-pink-400`}>
     Projects </h2>
     <div id='Projects'  className="mx-auto">
       
@@ -45,7 +46,7 @@ const Projects = () => {
           <div className='flex flex-wrap my-2'>
   {project.tech.map((tag, techIndex) => (
     <span
-      className="inline-block bg-gray-200 text-gray-800 my-2 py-1 px-4 rounded-full mx-2 font-mono align-middle"
+      className="inline-block bg-gray-300 text-gray-800 my-2 py-1 px-4 rounded-full mx-2 font-mono align-middle"
       key={techIndex}
     >
       <i className="fa fa-tag pr-1" aria-hidden="true"></i>

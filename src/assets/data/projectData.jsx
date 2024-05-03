@@ -13,7 +13,7 @@ export const projectData =  [
             id: 2,
             name: 'FitFolio',
             images: ['images/fitfolio-1.png', 'images/fitfolio-2.png','images/fitfolio-3.png'],
-            description: "FitFolio is designed to enhance fitness enthusiasts workout experience by offering access to a diverse workout database through an API. Developed with a focus on RESTful principles, it optimizes communication with FitnessAPI, minimizing unnecessary API calls for efficient data retrieval. Utilizing React Router, FitFolio generates dynamic pages seamlessly, facilitating smooth navigation for users, and ensuring an intuitive browsing experience.",
+            description: "FitFolio is designed to assist workouts by offering access to a diverse exercise database through an API. It optimizes communication with FitnessAPI, minimizing unnecessary API calls for efficient data retrieval. Utilizing React Router, FitFolio generates dynamic pages seamlessly. Future improvements planned: favouriting feature using LocalStorage.",
             tech: ["Restful API", "React Router"],
             link: 'https://ally-online-coach.vercel.app/fitfolio',
             gitLink: 'https://github.com/maddiejeanie/Ally-Online-Coach/tree/main/src/Components/FitFolioComponents',
