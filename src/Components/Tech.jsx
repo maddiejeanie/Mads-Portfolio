@@ -13,6 +13,7 @@ import {
   SiKentico,
   SiAzuredevops,
   SiBabel,
+  SiNodeDotJs, 
   SiJasmine,
   SiVercel,
   SiSanity,
@@ -49,16 +50,12 @@ function Tech({ isDarkMode }) {
         </div>
 
         <div>
-          <h2 className="text-xl font-bold mb-4">Front-End Development</h2>
+          <h2 className="text-xl font-bold mb-4">Front / Back End Development</h2>
           <IconLabel Icon={FaReact} label="React.js" />
           <IconLabel Icon={SiTailwindcss} label="Tailwind CSS" />
           <IconLabel Icon={SiMui} label="Material UI Framework" />
           <IconLabel Icon={SiVite} label="Vite" />
-        </div>
-
-        <div>
-          <h2 className="text-xl font-bold mb-4">Databases</h2>
-          <IconLabel Icon={SiFirebase} label="Firebase Realtime" />
+          <IconLabel Icon={SiNodeDotJs} label="Node.js" />
         </div>
 
         <div>
@@ -66,6 +63,11 @@ function Tech({ isDarkMode }) {
           <IconLabel Icon={SiSanity} label="Sanity CMS" />
           <IconLabel Icon={SiWordpress} label="WordPress" />
           <IconLabel Icon={SiKentico} label="Kentico" />
+        </div>
+
+        <div>
+          <h2 className="text-xl font-bold mb-4">Databases</h2>
+          <IconLabel Icon={SiFirebase} label="Firebase Realtime" />
         </div>
 
         <div>
