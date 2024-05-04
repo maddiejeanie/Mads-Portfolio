@@ -12,30 +12,48 @@ COPYRIGHT 2075-2077 ROBCO INDUSTRIES<br></br>
 </h3>
     
           
-<div className="flex flex-col md:flex-row-reverse items-center">
-  <img
-    className={`mx-auto w-60 h-60 cursor-pointer rounded-full border-4 ${isDarkMode ? 'border-purple-200' : 'border-violet-900'}`}
-    src={isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'}
-    alt="yes, it's fallout themed"
-    onMouseEnter={(e) => { e.currentTarget.src = '/images/madeleine-novak.jpg'; }}
-    onMouseLeave={(e) => { e.currentTarget.src = isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'; }}
-    onTouchStart={(e) => { e.currentTarget.src = '/images/madeleine-novak.jpg'; }}
-    onTouchEnd={(e) => { e.currentTarget.src = isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'; }}
-  />
-  <div>
-       <p className={`text-7xl h1 font-bold my-8 uppercase tracking-wide`}>
-          &gt;Hi! I'm Maddie<span className="animate-ping font-black tracking-tighter">|</span>
-          </p>
-          <p className="text-2xl lg:text-4xl leading-relaxed mb-2">
-            I'm a React Developer, based in Sydney, Australia. I'm passionate about building helpful, functional tech that makes life easier.
-          </p>
-        
-          </div>
-          
-        </div>
-        <p className="italic text-center md:text-left">
+<div className="flex flex-col md:flex-row-reverse items-center md:items-start p-4 gap-8 ">
+  <div className="w-3/4 lg:w-1/2 flex justify-center self-center">
+    <img
+      className={`cursor-pointer rounded-full border-4 object-cover ${
+        isDarkMode ? 'border-purple-200' : 'border-purple-900'
+      }`}
+      src={isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'}
+      alt="yes, it's fallout themed"
+      onMouseEnter={(e) => {
+        e.currentTarget.src = '/images/madeleine-novak.jpg';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.src = isDarkMode
+          ? '/images/vault-v-300.png'
+          : '/images/vault-v-900.png';
+      }}
+      onTouchStart={(e) => {
+        e.currentTarget.src = '/images/madeleine-novak.jpg';
+      }}
+      onTouchEnd={(e) => {
+        e.currentTarget.src = isDarkMode
+          ? '/images/vault-v-300.png'
+          : '/images/vault-v-900.png';
+      }}
+    />
+  </div>
+  <div className="w-full">
+    <p
+      className={`h1 text-3xl md:text-4xl lg:text-5xl font-bold my-4 md:my-8 uppercase tracking-wide `}
+    >
+      &gt;Hi! I'm Maddie<span className="animate-ping font-black tracking-tighter">|</span>
+    </p>
+    <p className="text-base md:text-lg lg:text-xl leading-relaxed mb-2">
+      I'm a React Developer, based in Sydney, Australia. I'm passionate about
+      building helpful, functional tech that makes life easier.
+    </p>
+
+        <p className="italic md:text-left">
             I like coffee, futurology, gaming, live music, my two cats - Billy & BonBon, memes, learning new things.
           </p>
+          </div>
+</div>
       
       <div className="flex self-center mb-8 text-center gap-10 pt-8">
         <a href="https://github.com/maddiejeanie" className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 mr-4`}>

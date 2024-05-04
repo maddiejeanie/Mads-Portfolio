@@ -13,7 +13,7 @@ import {
   SiKentico,
   SiAzuredevops,
   SiBabel,
-  SiNodeDotJs, 
+  SiNodedotjs , 
   SiJasmine,
   SiVercel,
   SiSanity,
@@ -55,7 +55,7 @@ function Tech({ isDarkMode }) {
           <IconLabel Icon={SiTailwindcss} label="Tailwind CSS" />
           <IconLabel Icon={SiMui} label="Material UI Framework" />
           <IconLabel Icon={SiVite} label="Vite" />
-          <IconLabel Icon={SiNodeDotJs} label="Node.js" />
+          <IconLabel Icon={SiNodedotjs} label="Node.js" />
         </div>
 
         <div>
