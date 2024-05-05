@@ -1,10 +1,12 @@
 import React from 'react';
 
 function Contact({ isDarkMode }) {
+const inputClasses = `w-full px-4 py-2 border-2 border-gray-100 ${isDarkMode ? 'bg-violet-100' : 'bg-gray-100'} rounded focus:outline-none focus:ring-2 focus:ring-violet-500`
+
   return (
     <div id="Contact" className="scroll-mt-20">
             
-      <div className=" mx-auto px-4 pb-4">
+      <div className=" mx-auto px-4 pb-4 text-purple-800">
       <h2 className={`text-5xl h2 font-bold ${isDarkMode ? 'text-purple-200' : 'text-purple-800'} mb-8 uppercase tracking-wide`}>
           Contact </h2>
         <form
@@ -14,7 +16,7 @@ function Contact({ isDarkMode }) {
         >
           <div className="mb-4">
             <input
-              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-violet-500"
+              className={inputClasses}
               placeholder="Name"
               type="text"
               id="name"
@@ -25,7 +27,7 @@ function Contact({ isDarkMode }) {
           </div>
           <div className="mb-4">
             <input
-              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-violet-500"
+              className={inputClasses}
               placeholder="Email"
               type="email"
               id="email"
@@ -36,7 +38,7 @@ function Contact({ isDarkMode }) {
           </div>
           <div className="mb-4">
             <textarea
-              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-violet-500"
+              className={inputClasses}
               placeholder="Leave a message"
               id="message"
               name="message"
