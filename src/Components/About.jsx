@@ -16,7 +16,7 @@ COPYRIGHT 2075-2077 ROBCO INDUSTRIES<br></br>
   <div className="w-3/4 lg:w-1/2 flex justify-center self-center">
     <img
       className={`cursor-pointer rounded-full border-4 object-cover ${
-        isDarkMode ? 'border-purple-200' : 'border-purple-900'
+        isDarkMode ? 'border-purple-200' : 'border-purple-800'
       }`}
       src={isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'}
       alt="yes, it's fallout themed"
