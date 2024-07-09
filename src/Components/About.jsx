@@ -9,8 +9,8 @@ function About({ isDarkMode }) {
         - Display 1 -
       </h3>
 
-      <div className="flex flex-col md:flex-row-reverse items-center md:items-start p-4 gap-4">
-        <div className="sm:w-3/4 lg:w-1/2 flex justify-center self-center">
+      <div className="flex flex-col md:flex-row-reverse items-center md:items-start gap-4">
+        <div className="w-3/4 lg:w-1/2 flex justify-center self-center">
           <img
             className={`cursor-pointer rounded-full border-4 object-cover ${isDarkMode ? 'border-purple-200' : 'border-purple-800'}`}
             src={isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'}
@@ -67,20 +67,20 @@ function About({ isDarkMode }) {
       </div>
 
       <div className="flex self-center text-center gap-10 pt-4">
-        <a href="https://github.com/maddiejeanie" className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 mr-4`}>
+        <a href="https://github.com/maddiejeanie" className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 `}>
           <i className="fab fa-github fa-2x"></i>
           <p>github</p>
         </a>
-        <a href="https://linkedin.com/in/maddienovak" className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 mr-4`}>
+        <a href="https://linkedin.com/in/maddienovak" className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 `}>
           <i className="fab fa-linkedin fa-2x"></i>
           <p>linkedin</p>
         </a>
         <a href="/maddie-novak-2024-resume.pdf" 
             target="_blank"
             rel="noopener noreferrer"
-            download className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 mr-4`}>
+            download className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 `}>
           <i className="fa fa-file-pdf-o fa-2x"></i>
-          <p>resume pdf</p>
+          <p>resume</p>
         </a>
       </div>
     </div>
