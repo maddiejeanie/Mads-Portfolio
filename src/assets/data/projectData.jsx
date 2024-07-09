@@ -33,8 +33,8 @@ export const projectData =  [
             images: ['images/clientcheckin-1.png', 'images/clientcheckin-2.png', 'images/clientcheckin-3.png'],
             description: "ClientCheckin is a web application crafted with MaterialUI's form options, ensuring smooth check-ins and fitness tracking for a trainer's clients. Using Firestore's authentication and real-time database, clients' data remains secure while they update and review their progress instantly.",
             tech: ["Firebase Realtime Database", "Authentication", "MaterialUi"],
-            link: 'https://github.com/maddiejeanie/Ally-Online-Coach/tree/main/src/Components/ClientCheckinComponents',
-            gitLink: 'https://github.com/maddiejeanie/ally-online-coach',
+            link: 'https://ally-online-coach.vercel.app/clientcheckin',
+            gitLink: 'https://github.com/maddiejeanie/Ally-Online-Coach/tree/main/src/Components/ClientCheckinComponents',
         },
 
 ]
