@@ -9,7 +9,7 @@ function About({ isDarkMode }) {
         - Display 1 -
       </h3>
 
-      <div className="flex flex-col md:flex-row-reverse items-center md:items-start p-4 gap-8">
+      <div className="flex flex-col md:flex-row-reverse items-center md:items-start p-4 gap-4">
         <div className="w-3/4 lg:w-1/2 flex justify-center self-center">
           <img
             className={`cursor-pointer rounded-full border-4 object-cover ${isDarkMode ? 'border-purple-200' : 'border-purple-800'}`}
@@ -44,21 +44,21 @@ function About({ isDarkMode }) {
           <div className={`${isDarkMode ? 'text-purple-200' : 'text-violet-900'} max-w-xl rounded-lg mt-8`}>
   <p className="text-2xl font-semibold mb-4">I'm Currently Working On</p>
   <ul className="space-y-3">
-    <li className={`${isDarkMode ? 'bg-gray-700' : 'bg-indigo-100'} p-4 rounded-lg shadow`}>
+    <li className={`${isDarkMode ? 'bg-gray-700' : 'bg-purple-100'} p-4 rounded-lg shadow`}>
       <p className="text-lg font-medium">Interning at Cardigan Studios</p>
       <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-800'}`}>Creating React based websites through Next.js with SanityCSS integrations.</p>
     </li>
-    <li className={`${isDarkMode ? 'bg-gray-700' : 'bg-indigo-100'} p-4 rounded-lg shadow`}>
+    <li className={`${isDarkMode ? 'bg-gray-700' : 'bg-purple-100'} p-4 rounded-lg shadow`}>
       <p className="text-lg font-medium">Converting ClientCheckin</p>
       <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-800'}`}>Into a iOS and Android friendly app via React Native.</p>
     </li>
-    <li className={`${isDarkMode ? 'bg-gray-700' : 'bg-indigo-100'} p-4 rounded-lg shadow`}>
-      <p className="text-lg font-medium">React Native Course</p>
-      <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-800'}`}>At Codeacademy.</p>
+    <li className={`${isDarkMode ? 'bg-gray-700' : 'bg-purple-100'} p-4 rounded-lg shadow`}>
+      <p className="text-lg font-medium">Wordpress Migration to Self Hosting</p>
+      <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-800'}`}>Re-integrating theme, plugins, backing up media and content. Completed june</p>
     </li>
-    <li className={`${isDarkMode ? 'bg-gray-700' : 'bg-indigo-100'} p-4 rounded-lg shadow`}>
-      <p className="text-lg font-medium">Git Course</p>
-      <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-800'}`}>At Codeacademy.</p>
+    <li className={`${isDarkMode ? 'bg-gray-700' : 'bg-purple-100'} p-4 rounded-lg shadow`}>
+      <p className="text-lg font-medium">React Native Course</p>
+      <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-800'}`}>At Codeacademy. Completed june</p>
     </li>
   </ul>
 </div>
@@ -66,7 +66,7 @@ function About({ isDarkMode }) {
         </div>
       </div>
 
-      <div className="flex self-center mb-8 text-center gap-10 pt-8">
+      <div className="flex self-center text-center gap-10 pt-4">
         <a href="https://github.com/maddiejeanie" className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} hover:text-purple-400 transition-colors duration-200 mr-4`}>
           <i className="fab fa-github fa-2x"></i>
           <p>github</p>

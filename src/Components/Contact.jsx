@@ -12,7 +12,7 @@ const inputClasses = `w-full px-4 py-2 border-2 border-gray-100 ${isDarkMode ? '
         <form
           action="https://getform.io/f/3d45e44f-c964-4deb-8055-0933fa59eb9a"
           method="POST"
-          className="w-3/4 px-4 mx-auto"
+          className="sm:w-3/4 px-4 mx-auto"
         >
           <div className="mb-4">
             <input
