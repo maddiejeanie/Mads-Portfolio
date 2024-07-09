@@ -10,7 +10,7 @@ function About({ isDarkMode }) {
       </h3>
 
       <div className="flex flex-col md:flex-row-reverse items-center md:items-start p-4 gap-4">
-        <div className="w-3/4 lg:w-1/2 flex justify-center self-center">
+        <div className="sm:w-3/4 lg:w-1/2 flex justify-center self-center">
           <img
             className={`cursor-pointer rounded-full border-4 object-cover ${isDarkMode ? 'border-purple-200' : 'border-purple-800'}`}
             src={isDarkMode ? '/images/vault-v-300.png' : '/images/vault-v-900.png'}
